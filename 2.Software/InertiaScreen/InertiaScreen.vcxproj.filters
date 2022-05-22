@@ -21,5 +21,8 @@
     <ClInclude Include="__vm\.InertiaScreen.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ISBlinker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
