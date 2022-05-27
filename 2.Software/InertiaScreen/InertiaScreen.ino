@@ -11,7 +11,7 @@
 #include <dummy.h>
 #include "ISBlinker.h"
 
-bool running = 0;
+bool running = 1;
 
 void parseData(String data);
 
@@ -40,18 +40,28 @@ void loop() {
 void parseData(String data) {
 	switch (data.toInt()) {
 		case 1: // Slow
-			if (speed >= 10) speed -= 10;
-			running = 1;
+			if (flag) {
+				if (speed > 23) speed -= 100;
+				Blinker.print("Speed: ", speed);
+				flag = 0;
+			}
 			break;
 		case 2: // Quick
-			if (speed <= 1013) speed += 10;
-			running = 1;
+			if (flag) {
+				if (speed < 1023) speed += 100;
+				Blinker.print("Speed: ", speed);
+				flag = 0;
+			}
 			break;
 		case 3: // Stop
-			running = !running;
+			if (flag) {
+				running = !running;
+				Blinker.print("State: ", running);
+				flag = 0;
+			}
 			break;
 		default:
-			running = 0;
+			running = 1;
 			break;
 	}
 }
