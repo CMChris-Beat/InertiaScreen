@@ -30,7 +30,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-OutputPath=Project Outputs for InertiaScreen_CurriculumDesign
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -72,6 +72,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RGVYXRDC
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for InertiaScreen_CurriculumDesign\Design Rule Check - InertiaScreen_CurriculumDesign.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -120,7 +124,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for InertiaScreen_CurriculumDesign
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

@@ -16,10 +16,13 @@ bool running = 0;
 void parseData(String data);
 
 void setup() {
+	analogWriteRange(1023);
+	analogWriteFreq(100);
 	pinMode(D6, OUTPUT);
 	pinMode(D7, OUTPUT);
-	digitalWrite(D6, LOW);
-	analogWrite(D7, 255);
+	// digitalWrite(D6, HIGH);
+	analogWrite(D6, speed);
+	digitalWrite(D7, LOW);
 	BLINKER_DEBUG.stream(Serial);
 	Blinker.begin(auth, ssid, pswd);
 	Button1.attach(button1_callback);
@@ -30,21 +33,22 @@ void setup() {
 void loop() {
 	Blinker.run();
 	parseData(input);
+	if (running == 0) analogWrite(D6, 0);
+	else analogWrite(D6, speed);
 }
 
 void parseData(String data) {
 	switch (data.toInt()) {
 		case 1: // Slow
-			analogWrite(D7, 80);
+			if (speed >= 10) speed -= 10;
 			running = 1;
 			break;
-		case 2: // Medium
-			analogWrite(D7, 150);
+		case 2: // Quick
+			if (speed <= 1013) speed += 10;
 			running = 1;
 			break;
-		case 3: // Quick
-			analogWrite(D7, 255);
-			running = 1;
+		case 3: // Stop
+			running = !running;
 			break;
 		default:
 			running = 0;
