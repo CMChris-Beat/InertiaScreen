@@ -10,6 +10,8 @@ unsigned int speed = 1023;
 char auth[] = "a2ca17d80890";
 char ssid[] = "YYY";
 char pswd[] = "aA123456";
+// char ssid[] = "HUAWEI-0J1AF5";
+// char pswd[] = "aA";
 
 // 新建组件对象
 BlinkerButton Button1("btn-slow");
