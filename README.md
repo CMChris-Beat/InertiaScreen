@@ -57,7 +57,7 @@
 
 **有能力的小伙伴可以将速度变快变慢的按钮换成滑块，能更好的控制速度，会丝滑很多。**
 
-![](4.Docs/1.ReadmeImages/手机APP截图.jpg)
+![](4.Docs/1.ReadmeImages/手机APP截图.png)
 
 
 
