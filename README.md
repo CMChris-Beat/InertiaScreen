@@ -49,10 +49,11 @@
 > 主要用到的元器件为（元器件皆可在淘宝店铺[优信电子](https://youxin-electronic.taobao.com/shop/view_shop.htm?spm=a230r.1.14.4.35ac24c9mNoVBK&user_number_id=2658592015)买到）：
 >
 > 1. D1 Mini 开发板（主控）
-> 2. SH1.0mm 2P 的插头接口
+> 2. SH1.0mm 2P 的插头接口及对应单头线
 > 3. FM116B 单路直流电机驱动器
 > 4. 滑动变阻器（硬件调速使用）3296W-5KΩ
 > 5. 贴片滑动开关
+> 6. N20直流减速电机
 
 
 
