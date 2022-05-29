@@ -71,6 +71,8 @@
 
 ![](4.Docs/1.ReadmeImages/二代原理图.png)
 
+![](4.Docs/1.ReadmeImages/二代电路渲染图.jpg)
+
 
 
 ### 程序部分
